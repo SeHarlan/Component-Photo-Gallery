@@ -6,8 +6,9 @@ export default class ImageList extends Component {
     render() {
         return <section>
             <p>
-                here's the items list {this.props.items.length}
+                here's the list length {this.props.items.length}
             </p>
+            <ImageItem item={this.props.items[0]} />
 
 
         </section>

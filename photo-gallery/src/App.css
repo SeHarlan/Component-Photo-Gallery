@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  color: wheat;
+  text-shadow: 2px 2px 2px black;
+}
+
+.item {
+  width: 33%;
+  border: 3px outset rgb(151, 80, 218);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  background-color: teal;
+  color: white
+}
+
+.item img {
+  width: 70%;
+}

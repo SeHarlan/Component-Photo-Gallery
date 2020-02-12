@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <hr />
       <ImageList items={ItemsArray}/>
     </div>
   );

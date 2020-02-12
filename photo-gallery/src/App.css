@@ -42,14 +42,24 @@ header {
   text-shadow: 2px 2px 2px black;
 }
 
+.list {
+  padding: 0;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 .item {
-  width: 33%;
+  width: 30%;
   border: 3px outset rgb(151, 80, 218);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px;
   background-color: teal;
-  color: white
+  color: white;
+  list-style-type: none;
 }
 
 .item img {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import ItemsArray from './data.js';
+
 
 import Header from './Header.js';
 import ImageList from './ImageList.js';
@@ -11,7 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <hr />
-      <ImageList items={ItemsArray}/>
+      
+      <ImageList />
     </div>
   );
 }

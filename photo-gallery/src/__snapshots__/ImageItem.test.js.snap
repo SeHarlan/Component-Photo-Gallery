@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ImageList.js correctly 1`] = `
+<li
+  className="item"
+>
+  <em>
+    category: 
+  </em>
+  <h2 />
+  <img />
+  <p>
+    horns: 
+  </p>
+</li>
+`;

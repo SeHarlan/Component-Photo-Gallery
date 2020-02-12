@@ -59,8 +59,18 @@ header {
   background-color: teal;
   color: white;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item img {
   width: 70%;
+}
+
+.item-filter {
+  border: 2px inset skyblue;
+  border-radius: 5px;
+  background-color: rgba(245, 222, 179, 0.5);
 }

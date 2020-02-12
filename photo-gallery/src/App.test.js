@@ -1,9 +1,36 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import renderer from "react-test-renderer";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+import App from "./App.js";
+test('renders App.js correctly', () => {
+  const tree = renderer
+    .create(<App />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
 });
+
+
+import Header from './Header.js';
+test('renders Header.js correctly', () => {
+  const tree = renderer
+    .create(<Header />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+import ImageList from './ImageList.js';
+test('renders ImageList.js correctly', () => {
+  const tree = renderer
+    .create(<ImageList />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+import ImageItem from './ImageItem.js';
+test('renders ImageList.js correctly', () => {
+  const tree = renderer
+    .create(<ImageItem />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
